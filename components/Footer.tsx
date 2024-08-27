@@ -2,7 +2,7 @@
 const Footer: React.FC = () => {
     return (
       <footer className="bg-blue-500 text-white p-4">
-        <p>© 2024 Tourism Website</p>
+        <p>© 2024 EnjoyTravelSG Website</p>
       </footer>
     );
   };

@@ -6,7 +6,12 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}', // Include the app directory for Next.js 14
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'blue-900': '#002855',
+        'blue-500': '#0f52ba',
+      },
+    },
   },
   plugins: [require('@tailwindcss/typography')],
 }
