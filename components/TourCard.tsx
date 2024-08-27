@@ -1,4 +1,6 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
+
 type Tour = {
   id: number;
   imageUrl: string;

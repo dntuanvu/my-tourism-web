@@ -1,5 +1,6 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import Link from 'next/link';
-import IframeComponent from './IframeComponent';
 import Navbar from './NavBar';
 
 const Header = () => {
@@ -8,11 +9,12 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo */}
         <div className="flex items-center">
-          <Link href="/" className="text-red-600 font-bold text-2xl">EnjoyTravelSG</Link>
+          <Link href="/" className="text-blue-500 font-bold text-2xl">EnjoyTravelSG</Link>
         </div>
         
         {/* Navigation Links */}
         <Navbar />
+        
       </div>
     </header>
   );

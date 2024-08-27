@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 'use client';
 
 import React, { ReactNode, useEffect, useState } from 'react';
@@ -16,8 +18,9 @@ interface Tab {
 // style={{width:'900px', height:'200px', border:'none'}}
 
 const tabs: Tab[] = [
-  { name: 'Hotels', icon: <FaPlane />, iframeSrcDesktop: 'https://www.trip.com/partners/ad/S552960?Allianceid=3883416&SID=22874365&trip_sub1=', iframeSrcMobile: 'https://www.trip.com/partners/ad/S553163?Allianceid=3883416&SID=22874365&trip_sub1=' },
-  { name: 'Flights', icon: <FaHotel />, iframeSrcDesktop: 'https://www.trip.com/partners/ad/S553037?Allianceid=3883416&SID=22874365&trip_sub1=', iframeSrcMobile: 'https://www.trip.com/partners/ad/S553184?Allianceid=3883416&SID=22874365&trip_sub1=' },
+  { name: 'Flights', icon: <FaPlane />, iframeSrcDesktop: 'https://www.trip.com/partners/ad/S553807?Allianceid=3883416&SID=22874365&trip_sub1=', iframeSrcMobile: 'https://www.trip.com/partners/ad/S553184?Allianceid=3883416&SID=22874365&trip_sub1=' },
+  { name: 'Hotels', icon: <FaHotel />, iframeSrcDesktop: 'https://www.trip.com/partners/ad/S553821?Allianceid=3883416&SID=22874365&trip_sub1=', iframeSrcMobile: 'https://www.trip.com/partners/ad/S553163?Allianceid=3883416&SID=22874365&trip_sub1=' },
+  
     //{ name: 'Trains', icon: FaTrain, iframeSrc: 'https://example.com/trains' },
     //{ name: 'Cars', icon: FaCar, iframeSrc: 'https://example.com/cars' },
     //{ name: 'Attractions & Tours', icon: FaMapSigns, iframeSrc: 'https://example.com/attractions' },

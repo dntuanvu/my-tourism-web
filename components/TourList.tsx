@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import { Tour } from '@/types';
 import TourCard from './TourCard';
 

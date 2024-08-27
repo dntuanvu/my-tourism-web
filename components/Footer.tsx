@@ -1,4 +1,5 @@
-// components/Footer.tsx
+/* eslint-disable react/no-unescaped-entities */
+
 const Footer: React.FC = () => {
     return (
       <footer className="bg-blue-500 text-white p-4">

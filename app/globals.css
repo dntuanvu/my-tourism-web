@@ -8,6 +8,12 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+.iframe-container {
+  width: 100%; /* Full width */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Hide overflow */
+}
+
 .iframe-container iframe {
   width: 100%;
   min-height: 80vh; /* Responsive height */
