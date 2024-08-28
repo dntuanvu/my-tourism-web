@@ -8,6 +8,7 @@ import React, { useEffect } from "react";
 import { ThemeProvider } from "@mui/material";
 import theme from "../app/theme";
 
+
 const Header = () => {
   const handleLogin = () => {
     console.log("Login");
@@ -28,7 +29,7 @@ const Header = () => {
         >
           <Box>
             <Link href="/">
-              <Typography component="span" variant="h6">
+              <Typography component="span" variant="h5">
                 Tourism
               </Typography>
             </Link>

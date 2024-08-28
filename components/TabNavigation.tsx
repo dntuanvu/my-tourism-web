@@ -65,10 +65,10 @@ const TabNavigation = () => {
         ))}
       </div>
       <div className="mt-4">
-        <iframe id="S552960"
+        {/* <iframe id="S552960"
             src={isMobile ? selectedTab.iframeSrcMobile : selectedTab.iframeSrcDesktop}
             className="w-full h-screen" allowFullScreen
-            style={{width: isMobile ? '100%' : '900px', height: isMobile ? '500px' : '200px', border:'none', backgroundColor: 'transparent' }} />
+            style={{width: isMobile ? '100%' : '900px', height: isMobile ? '500px' : '200px', border:'none', backgroundColor: 'transparent' }} /> */}
       </div>
     </div>
   );

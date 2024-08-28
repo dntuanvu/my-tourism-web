@@ -13,4 +13,7 @@ module.exports = withNextIntl({
       // Wildcard path matching
     ];
   },
+  images: {
+    domains: ['images.unsplash.com'],
+  },
 });
