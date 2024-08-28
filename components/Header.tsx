@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import Link from 'next/link';
-import Navbar from './NavBar';
+import Link from "next/link";
+import Navbar from "./NavBar";
+import { Box } from "@mui/material";
 
 const Header = () => {
   return (
@@ -9,12 +10,22 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo */}
         <div className="flex items-center">
-          <Link href="/" className="text-blue-500 font-bold text-2xl">EnjoyTravelSG</Link>
+          <Link href="/" className="text-blue-500 font-bold text-2xl">
+            EnjoyTravelSG
+          </Link>
         </div>
-        
+        <Box
+          sx={{
+            fontSize: "1.5rem",
+            fontWeight: "bold",
+            color: "primary.main",
+            backgroundColor: "red",
+          }}
+        >
+          <span>description</span>
+        </Box>
         {/* Navigation Links */}
         <Navbar />
-        
       </div>
     </header>
   );

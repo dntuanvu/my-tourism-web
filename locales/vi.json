@@ -1,6 +1,25 @@
 {
+  "Translation": {
+    "tourism": "Tourism",
+    "hotel": "Khách sạn",
+    "blog": "Blog",
+    "contact": "Liên hệ",
+    "faq": "Câu hỏi thường gặp"
+  },
   "Home": {
-    "title": "Trang chủ",
-    "description": "Chào mừng đến với trang chủ"
+    "title": "Tourism",
+    "description": "Xin chào đến với trang Tourism",
+    "topTour": "Xu hướng du lịch",
+    "topTourDesc": "Khám phá du lịch tại các điểm đến đang hot",
+    "offer": "Ưu đãi dành cho bạn:",
+    "offerDesc": "Khuyến mãi, ưu đãi và chương trình đặc biệt dành cho bạn:",
+    "quickPlan": "Lên kế hoạch nhanh",
+    "quickPlanDesc": "Chọn một cảm giác và khám phá các điểm đến hàng đầu",
+    "spiritual": "Tâm linh",
+    "romance": "Lãng mạn",
+    "relax": "Thư giãn",
+    "blog": "Blogs và gợi ý",
+    "blogDesc": "Bắt đầu lên kế hoạch cho chuyến đi tiếp theo",
+    "faq": "Câu hỏi thường gặp"
   }
 }

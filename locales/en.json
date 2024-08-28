@@ -1,6 +1,25 @@
 {
+  "Translation": {
+    "tourism": "Tourism",
+    "hotel": "Hotel",
+    "blog": "Blog",
+    "contact": "Contact Us",
+    "faq": "FAQ"
+  },
   "Home": {
-    "title": "Home",
-    "description": "Welcome to the home page"
+    "title": "Tourism",
+    "description": "Welcome to the Tourism page",
+    "topTour": "Top tourism",
+    "topTourDesc": "Explore tourism in trending destinations",
+    "offer": "Offers for you:",
+    "offerDesc": "Promotions, deals, and special offers for you:",
+    "quickPlan": "Quick planer trip",
+    "quickPlanDesc": "Pick a vibe and explore the top destinations",
+    "spiritual": "Spiritual",
+    "romance": "Romance",
+    "relax": "Relax",
+    "blog": "Blogs and Tips",
+    "blogDesc": "Start planning for next trip",
+    "faq": "FAQ"
   }
 }
