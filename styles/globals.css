@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+.iframe-container {
+  width: 100%; /* Full width */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Hide overflow */
+}
+
+.iframe-container iframe {
+  width: 100%;
+  min-height: 80vh; /* Responsive height */
+  border: none;
+  transition: all 0.3s ease-in-out; /* Smooth transition for source change */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 128, 128, 128;
+    --background-end-rgb: 128, 128, 128;
+  }
+}
+
+body {
+  color: red;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
