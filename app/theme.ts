@@ -65,6 +65,18 @@ const theme = createTheme({
         },
       },
     },
+    MuiChip: {
+      styleOverrides: {
+        root: {
+          borderRadius: "24px",
+          borderColor: "#006CE8",
+          "&:hover": {
+            backgroundColor: "#006CE8 !important",
+            color: "#FFF",
+          },
+        },
+      },
+    },
     MuiCssBaseline: {
       styleOverrides: {
         body: {

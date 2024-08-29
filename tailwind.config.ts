@@ -20,6 +20,7 @@ const config: Config = {
       backgroundColor: {
         primary: "#003566",
         secondary: "#006CE8",
+        paper: "#F6F6F6", 
       }
     },
   },

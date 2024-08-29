@@ -3,10 +3,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/styles/globals.css";
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "../../theme";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -22,13 +22,13 @@ export default async function RootLayout({
   const messages = await getMessages();
   return (
     <html lang="en">
-      <AppRouterCacheProvider>
+      <ThemeProvider theme={theme}>
         <body className={inter.className}>
           <NextIntlClientProvider messages={messages}>
             {children}
           </NextIntlClientProvider>
         </body>
-      </AppRouterCacheProvider>
+      </ThemeProvider>
     </html>
   );
 }
