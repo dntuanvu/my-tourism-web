@@ -25,7 +25,7 @@ const Header: React.FC<HeaderProps> = () => {
   };
 
   return (
-    <header className="p-4 bg-primary">
+    <header className="p-4 bg-primary sticky top-0 z-50">
       <ThemeProvider theme={theme}>
         <Box
           display="flex"

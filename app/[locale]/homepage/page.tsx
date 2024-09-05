@@ -6,9 +6,10 @@ import Hero from "../../../components/Hero";
 import Footer from "@/components/Footer";
 import { useTranslations } from "next-intl";
 import { Box, Container, Typography } from "@mui/material";
-import Card from "./components/Card";
+import Card from "@/app/[locale]/homepage/components/Card";
 import mockData from "./constants/mockData";
 import { useRouter } from "next/navigation";
+import Banner from "@/app/[locale]/homepage/components/Banner";
 
 export default function Home() {
   const t = useTranslations("Home");
@@ -26,14 +27,14 @@ export default function Home() {
       <Header />
 
       {/* <Hero /> */}
+      <Banner />
       <Container maxWidth="lg">
         <Box bgcolor="background.paper" p={2}>
           <Box>
-            <Typography variant="h5" fontWeight={600}>{t("topTour")}</Typography>
-            <Typography
-              variant="body1"
-              color="text.disabled"
-            >
+            <Typography variant="h5" fontWeight={600}>
+              {t("topTour")}
+            </Typography>
+            <Typography variant="body1" color="text.disabled">
               {t("topTourDesc")}
             </Typography>
           </Box>
@@ -62,19 +63,6 @@ export default function Home() {
               />
             ))}
           </Box>
-          {/* <Card
-            title="Card Title"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet."
-            imgSrc="https://images.unsplash.com/random"
-            day="1"
-            transportation="Bus"
-            price={100}
-            salePrice={90}
-            isSale={true}
-            rating={4}
-            dateAvailable={["10/9", "15/9"]}
-            onSelectDate={onSelectDate}
-          /> */}
         </Box>
       </Container>
       {/* Add more components like Featured Tours, Testimonials, etc. */}
