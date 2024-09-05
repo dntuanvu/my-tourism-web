@@ -55,16 +55,65 @@ const theme = createTheme({
       defaultProps: {
         disableElevation: true,
       },
-      styleOverrides: {
-        root: {
-          textTransform: "capitalize",
-          borderRadius: "24px",
-          backgroundColor: "#006CE8",
-          color: "#FFF",
-          padding: "4px 16px",
+      // styleOverrides: {
+      //   root: {
+      //     textTransform: "capitalize",
+      //     borderRadius: "24px",
+      //     backgroundColor: "#006CE8",
+      //     color: "#FFF",
+      //     padding: "4px 16px",
+      //   },
+      // },
+      variants: [
+        {
+          props: { variant: "contained" },
+          style: {
+            borderRadius: "40px",
+            textTransform: "capitalize",
+            backgroundColor: "#FFF",
+            color: "#006CE8",
+            border: "1px solid #006CE8",
+          },
         },
-      },
+        {
+          props: { variant: "outlined" },
+          style: {
+            borderRadius: "40px",
+            textTransform: "capitalize",
+            backgroundColor: "#FFF",
+            color: "#006CE8",
+            border: "1px solid #006CE8",
+          },
+        },
+        {
+          props: { variant: "text" },
+          style: {
+            backgroundColor: "transparent",
+            color: "#FFF",
+            borderRadius: "40px",
+            textTransform: "capitalize",
+            padding: "4px 16px",
+            fontSize: "1rem",
+            fontWeight: 500,
+            "&:hover": {
+              backgroundColor: "#006CE8",
+              color: "#FFF",
+            },
+            "&:active": {
+              backgroundColor: "#006CE8",
+              color: "#FFF",
+              border: "1px solid #FFF",
+            },
+            "&:focus": {
+              backgroundColor: "#006CE8",
+              color: "#FFF",
+              border: "1px solid #FFF",
+            },
+          },
+        },
+      ],
     },
+
     MuiChip: {
       styleOverrides: {
         root: {
