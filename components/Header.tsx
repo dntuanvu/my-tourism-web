@@ -15,6 +15,7 @@ const Header: React.FC<HeaderProps> = () => {
   const path = usePathname();
   const pathName = path?.split("/")[2];
   console.log("pathName", pathName);
+  const lang = path?.split("/")[1];
   const router = useRouter();
   const handleLogin = () => {
     console.log("Login");
@@ -43,42 +44,42 @@ const Header: React.FC<HeaderProps> = () => {
           <Container maxWidth="lg">
             <Box width="fit-content" position="relative" display="flex" gap={1}>
               <Button
-                onClick={() => router.push("homepage")}
+                onClick={() => router.push(`/${lang}/homepage`)}
                 variant="text"
                 className={path === "homepage" ? ".Mui-focus" : ""}
               >
                 Tourism
               </Button>
               <Button
-                onClick={() => router.push("hotel")}
+                onClick={() => router.push(`/${lang}/hotel`)}
                 variant="text"
                 className={pathName === "hotel" ? "active" : ""}
               >
                 Hotel
               </Button>
               <Button
-                onClick={() => router.push("flight")}
+                onClick={() => router.push(`/${lang}/flight`)}
                 variant="text"
                 className={path === "flight" ? "active" : ""}
               >
                 Flight
               </Button>
               <Button
-                onClick={() => router.push("blog")}
+                onClick={() => router.push(`/${lang}/blog`)}
                 variant="text"
                 className={path === "blog" ? "active" : ""}
               >
                 Blogs
               </Button>
               <Button
-                onClick={() => router.push("contact")}
+                onClick={() => router.push(`/${lang}/contact`)}
                 variant="text"
                 className={path === "contact" ? "active" : ""}
               >
                 Contact Us
               </Button>
               <Button
-                onClick={() => router.push("faq")}
+                onClick={() => router.push(`/${lang}/faq`)}
                 variant="text"
                 className={path === "faq" ? "active" : ""}
               >

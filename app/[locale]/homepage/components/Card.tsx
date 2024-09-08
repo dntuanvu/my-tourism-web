@@ -1,13 +1,5 @@
 "use client";
-import {
-  Box,
-  Button,
-  Container,
-  Link,
-  Typography,
-  Chip,
-  Rating,
-} from "@mui/material";
+import { Box, Button, Typography, Chip, Rating } from "@mui/material";
 import Image from "next/image";
 import _ from "lodash";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
@@ -76,7 +68,7 @@ const Card: React.FC<CardProps> = ({
         display="flex"
         flexDirection="column"
         flexWrap="wrap"
-        rowGap={0.5}
+        rowGap={0.2}
       >
         <Typography variant="h6" color="primary">
           {title}
@@ -131,13 +123,34 @@ const Card: React.FC<CardProps> = ({
           <CalendarMonthOutlinedIcon color="primary" fontSize="small" />
           <Box display="flex" gap={0.5} flexWrap="wrap">
             {dateAvailable.map((date) => (
-              <Chip
+              <Button
                 key={date}
-                label={`${date}`}
-                variant="outlined"
                 onClick={() => onSelectDate(date)}
-                size="small"
-              />
+                sx={{
+                  border: "1px solid #006CE8",
+                  padding: "0",
+                  fontSize: "0.7rem",
+                  fontWeight: 500,
+                  width: "30px",
+                  color: "#006CE8",
+                  "&:hover": {
+                    backgroundColor: "#006CE8",
+                    color: "#FFF",
+                  },
+                  "&:active": {
+                    backgroundColor: "#006CE8",
+                    color: "#FFF",
+                    border: "1px solid #FFF",
+                  },
+                  "&:focus": {
+                    backgroundColor: "#006CE8",
+                    color: "#FFF",
+                    border: "1px solid #FFF",
+                  },
+                }}
+              >
+                {date}
+              </Button>
             ))}
           </Box>
         </Box>

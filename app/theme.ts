@@ -119,9 +119,52 @@ const theme = createTheme({
         root: {
           borderRadius: "24px",
           borderColor: "#006CE8",
+          padding: "4px 16px",
+          fontSize: "1rem",
+          border: "none",
           "&:hover": {
             backgroundColor: "#006CE8 !important",
             color: "#FFF",
+          },
+        },
+      },
+      variants: [
+        {
+          props: { variant: "outlined" },
+          style: {
+            backgroundColor: "transparent",
+            color: "common.black",
+            border: "none",
+            "&:hover": {
+              backgroundColor: "#006CE8",
+              color: "#FFF",
+            },
+          },
+        },
+        {
+          props: { variant: "filled" },
+          style: {
+            backgroundColor: "#006CE8",
+            color: "#FFF",
+            "&:hover": {
+              backgroundColor: "#006CE8",
+              color: "#FFF",
+            },
+          },
+        },
+      ],
+    },
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          "& .MuiFilledInput-root": {
+            backgroundColor: "white",
+            placeholder: {
+              color: "red",
+            },
+            "&:hover, &:focus, &:active": {
+              backgroundColor: "white",
+            },
           },
         },
       },
